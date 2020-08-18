@@ -4,6 +4,7 @@ import { createStackNavigator } from '@react-navigation/stack'
 
 import LandingPage from '../pages/Landing';
 import GiveClasses from '../pages/GiveClasses';
+import StudyTabs from './StudyTabs';
 const { Navigator, Screen } = createStackNavigator();
 
 function AppStack() {
@@ -12,6 +13,7 @@ function AppStack() {
             <Navigator screenOptions={{ headerShown: false }}>
                 <Screen name="LandingPage" component={LandingPage}/>
                 <Screen name="GiveClasses" component={GiveClasses}/>
+                <Screen name="Study" component={StudyTabs}/>
             </Navigator>
         </NavigationContainer>
     );
